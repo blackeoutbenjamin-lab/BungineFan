@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Project | Login</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h2 { text-align: center; margin-bottom: 1.5rem; }
+
+        .input-group { margin-bottom: 1rem; }
+
+        label { display: block; margin-bottom: 0.5rem; font-size: 0.9rem; }
+
+        input {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #334155;
+            background: #0f172a;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 0.5rem;
+            background-color: var(--primary);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: opacity 0.3s;
+        }
+
+        .btn:hover { opacity: 0.9; }
+
+        .google-btn {
+            background-color: #ffffff;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .switch-form {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+        }
+
+        .switch-form a { color: var(--primary); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<div class="container" id="form-container">
+    <h2 id="form-title">Iniciar Sesión</h2>
+    
+    <form id="auth-form">
+        <div class="input-group">
+            <label>Correo Electrónico</label>
+            <input type="email" placeholder="ejemplo@correo.com" required>
